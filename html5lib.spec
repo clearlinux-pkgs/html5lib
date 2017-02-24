@@ -4,7 +4,7 @@
 #
 Name     : html5lib
 Version  : 0.99999999
-Release  : 3
+Release  : 4
 URL      : https://pypi.python.org/packages/2f/89/04a6f0beec623397c6c849530dbc538ba96935d367a36be40f5effdd03a7/html5lib-0.99999999.tar.gz
 Source0  : https://pypi.python.org/packages/2f/89/04a6f0beec623397c6c849530dbc538ba96935d367a36be40f5effdd03a7/html5lib-0.99999999.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
@@ -16,6 +16,7 @@ Requires: lxml
 Requires: ordereddict
 Requires: setuptools
 Requires: six
+Requires: webencodings
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pluggy
