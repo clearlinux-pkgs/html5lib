@@ -4,7 +4,7 @@
 #
 Name     : html5lib
 Version  : 0.99999999
-Release  : 2
+Release  : 3
 URL      : https://pypi.python.org/packages/2f/89/04a6f0beec623397c6c849530dbc538ba96935d367a36be40f5effdd03a7/html5lib-0.99999999.tar.gz
 Source0  : https://pypi.python.org/packages/2f/89/04a6f0beec623397c6c849530dbc538ba96935d367a36be40f5effdd03a7/html5lib-0.99999999.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
@@ -47,12 +47,12 @@ python components for the html5lib package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487896103
+export SOURCE_DATE_EPOCH=1487896536
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487896103
+export SOURCE_DATE_EPOCH=1487896536
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
