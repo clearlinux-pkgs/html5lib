@@ -4,12 +4,13 @@
 #
 Name     : html5lib
 Version  : 0.9999999
-Release  : 7
+Release  : 8
 URL      : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Source0  : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
 Group    : Development/Tools
 License  : MIT
+Requires: html5lib-python3
 Requires: html5lib-python
 Requires: six
 BuildRequires : pbr
@@ -25,9 +26,19 @@ BuildRequires : six
 %package python
 Summary: python components for the html5lib package.
 Group: Default
+Requires: html5lib-python3
 
 %description python
 python components for the html5lib package.
+
+
+%package python3
+Summary: python3 components for the html5lib package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the html5lib package.
 
 
 %prep
@@ -38,7 +49,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1506820120
+export SOURCE_DATE_EPOCH=1507154975
 python3 setup.py build -b py3
 
 %install
@@ -52,5 +63,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
