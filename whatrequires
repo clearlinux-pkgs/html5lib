@@ -3,4 +3,5 @@ bleach
 jupyter
 jupyter-notebook-gist
 nbconvert
+nbsphinx
 notebook
