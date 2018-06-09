@@ -4,13 +4,12 @@
 #
 Name     : html5lib
 Version  : 0.9999999
-Release  : 16
+Release  : 17
 URL      : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Source0  : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
 Group    : Development/Tools
 License  : MIT
-Requires: html5lib-legacypython
 Requires: html5lib-python3
 Requires: html5lib-python
 Requires: six
@@ -59,12 +58,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1519550515
+export SOURCE_DATE_EPOCH=1528556952
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1519550515
+export SOURCE_DATE_EPOCH=1528556952
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
