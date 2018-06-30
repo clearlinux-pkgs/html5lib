@@ -4,7 +4,7 @@
 #
 Name     : html5lib
 Version  : 0.9999999
-Release  : 18
+Release  : 19
 URL      : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Source0  : http://pypi.debian.net/html5lib/html5lib-0.9999999.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
