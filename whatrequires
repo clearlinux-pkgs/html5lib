@@ -1,2 +1,5 @@
 # This file contains recursive sources that require this package
+beautifulsoup4
 bleach
+conda
+lxml
