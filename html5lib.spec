@@ -4,7 +4,7 @@
 #
 Name     : html5lib
 Version  : 1.1
-Release  : 54
+Release  : 55
 URL      : https://files.pythonhosted.org/packages/ac/b6/b55c3f49042f1df3dcd422b7f224f939892ee94f22abcf503a9b7339eaf2/html5lib-1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ac/b6/b55c3f49042f1df3dcd422b7f224f939892ee94f22abcf503a9b7339eaf2/html5lib-1.1.tar.gz
 Summary  : HTML parser based on the WHATWG HTML specification
